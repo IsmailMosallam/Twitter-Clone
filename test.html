@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Academic Advising Form</title>
+    <style>
+        form {
+            width: 60%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: hsl(150, 62%, 62%);
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            color: #343253;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        input[type="text"] {
+            width: 45%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        
+        textarea {
+            width: 45%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        
+        p {
+            width: 45%;
+            padding: 10px;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        
+        input[type="text"].phone {
+            width: 100%;
+            padding: 10px;
+            border-radius: 3px;
+            margin-bottom: 10px;
+        }
+        
+        .input-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        input[type="submit"] {
+            display: block;
+            margin: 30px auto 0;
+            padding: 10px 50px;
+            background-color: #004080;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .gender {
+            padding: 0.5rem 1rem;
+            background-color: #fff;
+            border-radius: 5px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="datahw.php" method="POST">
+        <h3> Register</h3>
+
+        <div style="display:flex; justify-content: space-between;">
+            <p>Full name</p>
+            <p>User name</p>
+        </div>
+        <div class="input-container">
+            <input type="text" id="short-text" name="short" required placeholder="Enter your name ">
+            <input type="text" id="student-id" name="id" required placeholder="Enter your username">
+        </div>
+        <div>
+            <div style="display:flex; justify-content: space-between;">
+                <p>Email</p>
+                <p>phone number</p>
+            </div>
+            <div class="input-container">
+                <input type="text" id="short-text" name="short" required placeholder="Enter your email">
+                <input type="text" id="student-id" name="id" required placeholder="Enter your number">
+            </div>
+            <div>
+                <div style="display:flex; justify-content: space-between;">
+                    <p>password</p>
+                    <p>confirm password</p>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="short-text" name="short" required placeholder="Enter your password ">
+                    <input type="text" id="student-id" name="id" required placeholder="Confirm your password">
+                </div>
+                <div>
+
+                    <label for="phone">Gender</label>
+                    <div class="gender">
+                        <!-- <input class="phone" type="text" id="phone" name="phone" required placeholder="### ### ####"> -->
+                        <div style="float: left">
+                            <label><input type="radio" name="gender" value="Male"> Male</label>
+                        </div>
+
+                        <div style="float: right">
+                            <label><input type="radio" name="gender" value="Female"> Female</label>
+                        </div>
+                    </div>
+
+                    <div style="display:flex; justify-content: space-between;">
+                        <p>Country</p>
+                    </div>
+                    <div class="input-container">
+
+                        <select name="" id="" style="width: 100%; padding: 0.5rem; border-radius: 5px; border: none;  background:white">
+                            <option value="">Palestine</option>
+                        </select>
+                    </div>
+
+
+                    <input type="submit" value="submit">
+    </form>
+</body>
+
+
+</html>

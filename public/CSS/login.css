@@ -1,0 +1,106 @@
+    body {
+        background-color: #e0e0e0b8;
+    }
+    
+    p {
+        color: #900000;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+    }
+    
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    
+    .loginContainer {
+        padding: 20px;
+        width: 80%;
+        max-width: 500px;
+        border-radius: 10px;
+        background-color: #ffffff;
+        text-align: center;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        margin-bottom: 20px;
+        padding: 15px 20px;
+        border-radius: 20px;
+        border: none;
+        background-color: #e0e0e0;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+    }
+    
+    input[type="submit"] {
+        display: block;
+        margin: 30px auto 0;
+        padding: 10px 50px;
+        background-color: #004080;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #00264d;
+    }
+    
+    #submitButton:disabled {
+        background-color: #9dbfe0;
+    }
+    /* p 
+        color: red;
+    
+    
+    body {
+        background-color: #056475;
+    }
+    
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    
+    
+    .loginContainer {
+     padding: 20px;
+     width: 80%;
+     max-width: 500px;
+     border: 1px solid #dedede;
+     background-color: #fff;
+     text-align: center;
+     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+ }
+ 
+ form {
+     display: flex;
+     flex-direction: column;
+    }
+    
+    input[type="text"],
+ input[type="email"],
+ input[type="password"] {
+     margin-bottom: 20px;
+     padding: 5px 10px;
+     border-radius: 2px;
+     border: 1px solid #dedede;
+     background-color: #f2f2f2;
+    }
+    } */

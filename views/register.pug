@@ -1,0 +1,34 @@
+extends   ./layouts/login_layout.pug
+block content
+    .loginContainer
+        h1 Register
+        p #{errorMessage}
+        form#registerForm(method="post", onsubmit="event.preventDefault(); validateForm();")
+
+            input#first(type="text", name="firstName", placeholder="First name",value=firstName, required="")
+            input#last(type="text", name="lastName", placeholder="Last name",value=lastName, required="")
+            input#username(type="text", name="userName", placeholder="Username", required="")
+            p #{errorUsername}
+            input#email(type="email", name="email", placeholder="Email", required="")
+            p #{errorEmail}
+            input#password(type="password", name="password", placeholder="Password", required="")
+            input#passwordConf(type="password", name="passwordConf", placeholder="Confirm password", required="")
+            input#submitButton(type="submit", value="Login",disabled=false)
+
+        a(href="/login") Already have an account? Login here.
+
+    script.
+        var passwordField = document.getElementById("password")
+        var passwordConfirmField = document.getElementById("passwordConf")
+        var form = document.getElementById("registerForm")
+
+        function validateForm() {
+            $('#submitButton').prop("disable",false)
+            if(passwordField.value != passwordConfirmField.value) {
+                alert("Passwords do not match. Please try again.")
+            }
+            else {
+                form.submit();
+            }
+        }
+    
